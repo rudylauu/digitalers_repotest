@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sitio.master.cs" Inherits="formulario_de_contacto.Sitio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>
+                <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx"> Bienvenido a mi Sitio</asp:HyperLink>
+            </h1>
+            <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
