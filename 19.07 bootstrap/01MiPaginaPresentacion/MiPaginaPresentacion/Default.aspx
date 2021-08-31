@@ -6,10 +6,8 @@
         <div class="col-md-8">
             <h5>Quien soy?</h5>
             <image class="img-fluid" src="imagen/myAvatar.png"/>
-            <p>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et ultrices neque. Arcu non sodales neque sodales. Non arcu risus quis varius quam. Semper auctor neque vitae tempus quam pellentesque nec. Id diam maecenas ultricies mi eget mauris pharetra et. Sed arcu non odio euismod lacinia at quis risus. Eros in cursus turpis massa tincidunt dui. Habitant morbi tristique senectus et. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Nec feugiat nisl pretium fusce id velit ut. Magna fringilla urna porttitor rhoncus dolor purus. Vivamus at augue eget arcu dictum varius duis at consectetur. Egestas sed sed risus pretium quam. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Elementum nisi quis eleifend quam. Aliquam nulla facilisi cras fermentum odio eu. Tellus at urna condimentum mattis pellentesque. Tortor consequat id porta nibh venenatis cras sed.
-            </p>
-        <button type="button" class="btn btn-dark">Leer más</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et ultrices neque. Arcu non sodales neque sodales. Non arcu risus quis varius quam. Semper auctor neque vitae tempus quam pellentesque nec. Id diam maecenas ultricies mi eget mauris pharetra et. Sed arcu non odio euismod lacinia at quis risus. Eros in cursus turpis massa tincidunt dui. Habitant morbi tristique senectus et. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Nec feugiat nisl pretium fusce id velit ut. Magna fringilla urna porttitor rhoncus dolor purus. Vivamus at augue eget arcu dictum varius duis at consectetur. Egestas sed sed risus pretium quam. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Elementum nisi quis eleifend quam. Aliquam nulla facilisi cras fermentum odio eu. Tellus at urna condimentum mattis pellentesque. Tortor consequat id porta nibh venenatis cras sed.</p>
+        <a href="MasInformacion/QuienSoy.aspx" class="btn btn-dark">Leer más</a>
         </div>
         <div class="col-md-4"> <!--columna -->
             <h5>A que me dedico?</h5>
@@ -23,6 +21,22 @@
             <p>Mattis enim ut tellus elementum sagittis vitae. Turpis egestas pretium aenean pharetra magna ac. Ultricies lacus sed turpis tincidunt id. Quis hendrerit dolor magna eget est lorem. Eget magna fermentum iaculis eu. Nulla at volutpat diam ut. Lectus arcu bibendum at varius vel pharetra vel turpis. Arcu bibendum at varius vel pharetra. Sed enim ut sem viverra aliquet eget sit amet tellus. In nisl nisi scelerisque eu.</p>
             <p> Scelerisque eu ultrices vitae auctor eu augue ut lectus. Vulputate enim nulla aliquet porttitor lacus luctus. Nec feugiat in fermentum posuere urna. Mauris vitae ultricies leo integer malesuada nunc vel. Eget duis at tellus at. Ut tellus elementum sagittis vitae et leo duis. Non sodales neque sodales ut etiam sit amet nisl. Diam donec adipiscing tristique risus nec feugiat in. Consectetur lorem donec massa sapien faucibus et. Amet mattis vulputate enim nulla.</p>
             <asp:Button runat="server" Text="Leer Más" CssClass="btn btn-dark" />
+        </div>
+        <div class="col">
+            <h5>En que proyectos participe?</h5>
+            <asp:ListView runat="server" ID="lstProyectos">
+                <LayoutTemplate><!-- es lo que rodea a lo que se repite -->
+                    <ul> <!-- el ID siempre es itemPlaceHolder -->
+                        <asp:PlaceHolder runat="server" ID="itemPlaceHolder"></asp:PlaceHolder>
+                    </ul>
+                </LayoutTemplate>
+                <ItemTemplate> <!-- lo que se repite-->
+                    <li><!--cada uno del los elementos del ListView sera el DataItem -->
+                        <!-- siempre se escribe de esta forma-->
+                        <%# Container.DataItem %> <!--solo se utiliza cuando tenemmos una lista de tipo primitivo int,string etc.-->
+                    </li>
+                </ItemTemplate>
+            </asp:ListView>
         </div>
     </div>
     
