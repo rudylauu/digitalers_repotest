@@ -9,12 +9,47 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link type="text/css" rel="stylesheet" href="../Content/bootstrap.min.css" />
-    <script src="../Scripts/jquery-3.0.0.min.js"></script>
-    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <!--<link type="text/css" rel="stylesheet" href="../Content/bootstrap.min.css" /> esto lo cambio por
+        lo que esta abajo, ya que para que funcione el archivo de una subcarpeta dentro de una subcarpeta
+        debo convertir la URL RELATIVA A URL COMUN-->
+    <link type="text/css" rel="stylesheet" href="<%=Page.ResolveUrl("~/Content/bootstrap.min.css") %>" />
+    <!--<script src="../Scripts/jquery-3.0.0.min.js"></script>-->
+    <script src="<%=Page.ResolveUrl("~/Scripts/jquery-3.0.0.min.js") %>"></script>
+    <!--<script src="../Scripts/bootstrap.bundle.min.js"></script>-->
+    <script src="<%=Page.ResolveUrl("~/Scripts/bootstrap.bundle.min.js") %>"></script>
 </head>
 <body>
     <form id="form1" runat="server">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <!--ESTO ES UN LINK DE TIPO SERVIDOR -->
+             <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" CssClass="navbar-brand">Inicio</asp:HyperLink>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
         <div class="container">
             <div class="row">
                 <div class ="col text-center">

@@ -1,4 +1,4 @@
-﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Sitio.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MiPaginaPresentacion.Default" %>
+﻿     <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Sitio.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MiPaginaPresentacion.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -19,7 +19,7 @@
         <div class="col-md-4"> <!--columna -->
             <h5>A que me dedico?</h5>
             <p>Sed libero enim sed faucibus turpis in eu mi bibendum. Sagittis orci a scelerisque purus semper. Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Ut placerat orci nulla pellentesque dignissim enim sit amet. Elit ut aliquam purus sit amet luctus venenatis lectus. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Felis imperdiet proin fermentum leo vel orci. Tortor at risus viverra adipiscing at in tellus integer. Etiam tempor orci eu lobortis elementum nibh. Amet commodo nulla facilisi nullam vehicula. Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Bibendum enim facilisis gravida neque convallis a cras. Dictumst quisque sagittis purus sit.</p>
-        <button type="button" class="btn btn-dark">Leer más</button>
+        <a href="MasInformacion/Ocupacion/Default.aspx" class="btn btn-dark">Leer más</a>
         </div>
     </div>
     <div class="row"> <!--fila  -->
