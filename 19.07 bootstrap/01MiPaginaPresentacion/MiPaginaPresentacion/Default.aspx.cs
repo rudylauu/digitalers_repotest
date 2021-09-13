@@ -34,5 +34,15 @@ namespace MiPaginaPresentacion
             // darle la instruccion que publique en el html la lista
             lstProyectos.DataBind();
         }
+
+        protected void btnRedirigirQuienSoy_Click(object sender, EventArgs e)
+        {
+            //Server.Transfer cambia la pagina pero no cambia la Url
+            // es decir cambia la pagina en el servidor
+            //Server.Transfer("~/MasInformacion/QuienSoy.aspx");
+
+            //Si quiero que funcioner como un link debo hacer esto:
+            Response.Redirect("~/MasInformacion/QuienSoy.aspx");
+        }
     }
 }

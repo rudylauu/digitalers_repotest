@@ -53,6 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class ="col text-center">
+                    <!--creo este evento del servidor que esta enlazado a Web.config,,,, luego ir a Sitio.Master.cs-->
                     <h1 class="text-primary"><asp:Label runat="server" ID="lblNombrePersona"></asp:Label></h1>
                     <h3>Bienvenidos a mi sitio personal</h3>
                 </div>

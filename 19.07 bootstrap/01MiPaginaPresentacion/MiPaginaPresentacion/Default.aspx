@@ -12,7 +12,8 @@
                 <div class="col">
                     <h5>Quien soy?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et ultrices neque. Arcu non sodales neque sodales. Non arcu risus quis varius quam. Semper auctor neque vitae tempus quam pellentesque nec. Id diam maecenas ultricies mi eget mauris pharetra et. Sed arcu non odio euismod lacinia at quis risus. Eros in cursus turpis massa tincidunt dui. Habitant morbi tristique senectus et. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Nec feugiat nisl pretium fusce id velit ut. Magna fringilla urna porttitor rhoncus dolor purus. Vivamus at augue eget arcu dictum varius duis at consectetur. Egestas sed sed risus pretium quam. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Elementum nisi quis eleifend quam. Aliquam nulla facilisi cras fermentum odio eu. Tellus at urna condimentum mattis pellentesque. Tortor consequat id porta nibh venenatis cras sed.</p>
-                    <a href="MasInformacion/QuienSoy.aspx" class="btn btn-dark">Leer más</a>
+                    <%--<a href="MasInformacion/QuienSoy.aspx" class="btn btn-dark">Leer más</a>--%>
+                    <asp:Button runat="server" ID="btnRedirigirQuienSoy" Text="Leer más" Cssclas="btn btn-dark" OnClick="btnRedirigirQuienSoy_Click" />
                 </div>
             </div>
         </div>
