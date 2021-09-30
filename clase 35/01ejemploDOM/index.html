@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--creo un id para que se pueda ubicar en el Dom-->
+    <div id="miContenido"></div>
+    <div id="miOtroContenido"></div>
+    <div id="variasLineas"></div>
+    <script>
+        // esto es para que se lea despues de haber cargado la pagina
+        var elElemento = document.getElementById("miContenido");
+        elElemento.innerText = "Hola mundo";
+        
+        //el innerText es de texto plano y si quiero que lea el contenido que contenga
+        //html necesito hacerlo con un "innerHTML"
+        var elOtroElemento = document.getElementById("miOtroContenido")
+        elOtroElemento.innerHTML = "<b>Hola Rudy Lau</b>"
+
+        var elemVariasLineas = document.getElementById("variasLineas")
+        var lineas = [];
+        lineas.push("Linea uno");
+        lineas.push("Linea dos");
+        lineas.push("linea 3");
+        lineas.push("linea cuatro");
+
+        for( var i= 0; i< lineas.length; i++)
+        {
+            var lineaActual = lineas[i];
+            //elemVariasLineas.innerHTML = elemVariasLineas.innerHTML + lineaActual + "<br>";
+            elemVariasLineas.innerHTML += lineaActual + "<br>";
+        }
+    </script>
+</body>
+</html>
