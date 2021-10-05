@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--se ejecuta cuando el  navegador termina de cargar la pagina-->
+<body onload="alert('termino de cargar la pagina')">
+    <button onclick="saludar()">haceme click </button><hr> <br>
+
+    Nombre:
+    <input type="text" id="txtNombre"/> <hr>
+    <button onclick="saludarConNombre()"> Saludar</button>
+
+    <script>
+        function saludar(){
+            alert("Hola mundo");
+        }
+        function saludarConNombre(){
+            // para leer un elemento del html debo ubicarlo en el Dom
+            var elementoNombre = document.getElementById("txtNombre");
+            //aca no me sirve el innertext pero si el value porque 
+            //me sirve para leer un elemento de formulario
+            var nombre = elementoNombre.value;
+            alert( "hola " + nombre);
+        }
+    </script>
+</body>
+</html>
