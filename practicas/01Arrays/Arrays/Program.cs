@@ -16,6 +16,35 @@ namespace Arrays
 
                 Console.WriteLine("Persona en la posición { 0}: { 1}", i, vectorPersonas[i]);
             }*/
+
+            /****************************************************/
+            /*int valorA = 1;
+
+            int valorB = 10;
+
+            while (valorA <= 10 && valorB >= 0)
+            {
+
+                valorA *= 2;
+
+                valorB--;
+
+            }
+
+            Console.WriteLine(valorA + valorB);*/
+
+
+            /****************************************************/
+            /*int valor = 0;
+
+            for (int i = 0, j = 10; i < 10; i++, j--)
+            {
+
+                valor = valor + (i + j);
+
+            }
+
+            Console.WriteLine(valor);*/
            
 
         }
