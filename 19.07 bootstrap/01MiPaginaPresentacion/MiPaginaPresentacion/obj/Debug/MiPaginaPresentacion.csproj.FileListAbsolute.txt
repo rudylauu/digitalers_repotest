@@ -122,3 +122,9 @@ C:\Users\lau\Desktop\Proyectos_Personales.Git\19.07 bootstrap\01MiPaginaPresenta
 C:\Users\lau\Desktop\Proyectos_Personales.Git\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\AccesoDatos.dll
 C:\Users\lau\Desktop\Proyectos_Personales.Git\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\Negocio.pdb
 C:\Users\lau\Desktop\Proyectos_Personales.Git\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\AccesoDatos.pdb
+C:\Users\lau\Desktop\digitalers_repotest\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\Entidades.dll
+C:\Users\lau\Desktop\digitalers_repotest\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\Negocio.dll
+C:\Users\lau\Desktop\digitalers_repotest\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\AccesoDatos.dll
+C:\Users\lau\Desktop\digitalers_repotest\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\Entidades.pdb
+C:\Users\lau\Desktop\digitalers_repotest\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\Negocio.pdb
+C:\Users\lau\Desktop\digitalers_repotest\19.07 bootstrap\01MiPaginaPresentacion\MiPaginaPresentacion\bin\AccesoDatos.pdb
