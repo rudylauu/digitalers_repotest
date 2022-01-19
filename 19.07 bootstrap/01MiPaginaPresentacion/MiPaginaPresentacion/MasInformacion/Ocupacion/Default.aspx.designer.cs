@@ -7,65 +7,65 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace MiPaginaPresentacion.MasInformacion
+namespace MiPaginaPresentacion.MasInformacion.Ocupacion
 {
 
 
-    public partial class QuienSoy
+    public partial class Default
     {
 
         /// <summary>
-        /// Control pnlError.
+        /// Control lblContadorViewState.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlError;
+        protected global::System.Web.UI.WebControls.Label lblContadorViewState;
 
         /// <summary>
-        /// Control lblError.
+        /// Control btnContarViewState.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.Button btnContarViewState;
 
         /// <summary>
-        /// Control lstComentarios.
+        /// Control lblContadorSession.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lstComentarios;
+        protected global::System.Web.UI.WebControls.Label lblContadorSession;
 
         /// <summary>
-        /// Control txtNombre.
+        /// Control btnContarSession.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        protected global::System.Web.UI.WebControls.Button btnContarSession;
 
         /// <summary>
-        /// Control txtComentarios.
+        /// Control lblContadorCookies.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtComentarios;
+        protected global::System.Web.UI.WebControls.Label lblContadorCookies;
 
         /// <summary>
-        /// Control btnGuardar.
+        /// Control btnContarCookies.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardar;
+        protected global::System.Web.UI.WebControls.Button btnContarCookies;
     }
 }

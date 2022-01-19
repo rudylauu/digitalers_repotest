@@ -78,6 +78,8 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="imagen\myAvatar.png" />
+    <Content Include="imagen\Rudy.jpg" />
+    <Content Include="MasInformacion\BorrarComentario.aspx" />
     <Content Include="MasInformacion\Ocupacion\Default.aspx" />
     <Content Include="MasInformacion\QuienSoy.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -192,7 +194,6 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clases\Comentario.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasInformacion\BorrarComentario.aspx.cs">
+      <DependentUpon>BorrarComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasInformacion\BorrarComentario.aspx.designer.cs">
+      <DependentUpon>BorrarComentario.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasInformacion\Ocupacion\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -243,6 +251,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f4163592-cef3-49bd-8a53-d48e0e3d35e5}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{214bdec0-4795-4d67-a4e4-a555c2cc32ae}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
