@@ -33,7 +33,7 @@ select * from Customers-- corroboro antes que quiero cambiar para no arruiar la 
 where Country ='Argentina'
 
 update Customers set-- luego ejecuto esto para actualizar la celda correcta
-PostalCode = '1876'
+PostalCode = '1877'
 where Country ='Argentina'
 
 
